@@ -65,7 +65,7 @@
 		19DA26C81F91FB9600C659B4 /* weibo */ = {
 			isa = PBXGroup;
 			children = (
-				19DA26DC1F9203D000C659B4 /* Home */,
+				19DA26E61F920BB900C659B4 /* Classes */,
 				19DA26C91F91FB9600C659B4 /* AppDelegate.swift */,
 				19DA26CB1F91FB9600C659B4 /* ViewController.swift */,
 				19DA26CD1F91FB9600C659B4 /* Main.storyboard */,
@@ -76,13 +76,13 @@
 			path = weibo;
 			sourceTree = "<group>";
 		};
-		19DA26DC1F9203D000C659B4 /* Home */ = {
+		19DA26DC1F9203D000C659B4 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
 				19DA26E01F92048E00C659B4 /* Controller */,
 				19DA26DD1F92042C00C659B4 /* View */,
 			);
-			name = Home;
+			name = "Home(首页)";
 			sourceTree = "<group>";
 		};
 		19DA26DD1F92042C00C659B4 /* View */ = {
@@ -99,6 +99,46 @@
 				19DA26E11F9204C300C659B4 /* HomeTableViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		19DA26E31F920AB900C659B4 /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		19DA26E41F920ACC00C659B4 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Me(我)";
+			sourceTree = "<group>";
+		};
+		19DA26E51F920AE400C659B4 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		19DA26E61F920BB900C659B4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				19DA26E71F920C3B00C659B4 /* Tools(工具) */,
+				19DA26DC1F9203D000C659B4 /* Home(首页) */,
+				19DA26E31F920AB900C659B4 /* Message(消息) */,
+				19DA26E51F920AE400C659B4 /* Discover(发现) */,
+				19DA26E41F920ACC00C659B4 /* Me(我) */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19DA26E71F920C3B00C659B4 /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Tools(工具)";
 			sourceTree = "<group>";
 		};
 		57771699603490A4BA9B384F /* Pods */ = {
