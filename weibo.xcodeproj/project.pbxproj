@@ -12,6 +12,8 @@
 		19DA26CF1F91FB9600C659B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA26CD1F91FB9600C659B4 /* Main.storyboard */; };
 		19DA26D11F91FB9600C659B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DA26D01F91FB9600C659B4 /* Assets.xcassets */; };
 		19DA26D41F91FB9600C659B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA26D21F91FB9600C659B4 /* LaunchScreen.storyboard */; };
+		19DA26DF1F92043E00C659B4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA26DE1F92043E00C659B4 /* HomeTableViewCell.swift */; };
+		19DA26E21F9204C300C659B4 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA26E11F9204C300C659B4 /* HomeTableViewController.swift */; };
 		BDB423B5D910F7919A7ADADB /* Pods_weibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32604118224C892529D204 /* Pods_weibo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		19DA26D01F91FB9600C659B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19DA26D31F91FB9600C659B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19DA26D51F91FB9600C659B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DA26DE1F92043E00C659B4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		19DA26E11F9204C300C659B4 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		DC32604118224C892529D204 /* Pods_weibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF4CAB0B453413255F49181 /* Pods-weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +65,7 @@
 		19DA26C81F91FB9600C659B4 /* weibo */ = {
 			isa = PBXGroup;
 			children = (
+				19DA26DC1F9203D000C659B4 /* Home */,
 				19DA26C91F91FB9600C659B4 /* AppDelegate.swift */,
 				19DA26CB1F91FB9600C659B4 /* ViewController.swift */,
 				19DA26CD1F91FB9600C659B4 /* Main.storyboard */,
@@ -69,6 +74,31 @@
 				19DA26D51F91FB9600C659B4 /* Info.plist */,
 			);
 			path = weibo;
+			sourceTree = "<group>";
+		};
+		19DA26DC1F9203D000C659B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				19DA26E01F92048E00C659B4 /* Controller */,
+				19DA26DD1F92042C00C659B4 /* View */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		19DA26DD1F92042C00C659B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19DA26DE1F92043E00C659B4 /* HomeTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		19DA26E01F92048E00C659B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19DA26E11F9204C300C659B4 /* HomeTableViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		57771699603490A4BA9B384F /* Pods */ = {
@@ -232,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DA26E21F9204C300C659B4 /* HomeTableViewController.swift in Sources */,
+				19DA26DF1F92043E00C659B4 /* HomeTableViewCell.swift in Sources */,
 				19DA26CC1F91FB9600C659B4 /* ViewController.swift in Sources */,
 				19DA26CA1F91FB9600C659B4 /* AppDelegate.swift in Sources */,
 			);
@@ -401,6 +433,7 @@
 				19DA26DA1F91FB9600C659B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
