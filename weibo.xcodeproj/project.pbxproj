@@ -12,8 +12,17 @@
 		19DA26CF1F91FB9600C659B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA26CD1F91FB9600C659B4 /* Main.storyboard */; };
 		19DA26D11F91FB9600C659B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DA26D01F91FB9600C659B4 /* Assets.xcassets */; };
 		19DA26D41F91FB9600C659B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA26D21F91FB9600C659B4 /* LaunchScreen.storyboard */; };
-		19DA26DF1F92043E00C659B4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA26DE1F92043E00C659B4 /* HomeTableViewCell.swift */; };
-		19DA26E21F9204C300C659B4 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA26E11F9204C300C659B4 /* HomeTableViewController.swift */; };
+		19DA27031F922F1000C659B4 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA27021F922F1000C659B4 /* HomeTableViewController.swift */; };
+		19DA27171F92655E00C659B4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA27161F92655E00C659B4 /* MainViewController.swift */; };
+		19DA27191F92667B00C659B4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA27181F92667B00C659B4 /* Home.storyboard */; };
+		19DA271C1F92683D00C659B4 /* Compose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA271B1F92683D00C659B4 /* Compose.storyboard */; };
+		19DA271E1F92690600C659B4 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA271D1F92690600C659B4 /* Discover.storyboard */; };
+		19DA27201F92695900C659B4 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA271F1F92695900C659B4 /* Message.storyboard */; };
+		19DA27221F92698D00C659B4 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA27211F92698D00C659B4 /* Me.storyboard */; };
+		19DA27241F92739F00C659B4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA27231F92739F00C659B4 /* HomeTableViewCell.swift */; };
+		19DA27271F93125500C659B4 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA27261F93125500C659B4 /* UIButton+Extension.swift */; };
+		19DA272A1F931F9D00C659B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA27291F931F9D00C659B4 /* User.swift */; };
+		19DA272C1F9322D000C659B4 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA272B1F9322D000C659B4 /* Status.swift */; };
 		BDB423B5D910F7919A7ADADB /* Pods_weibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32604118224C892529D204 /* Pods_weibo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +35,17 @@
 		19DA26D01F91FB9600C659B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19DA26D31F91FB9600C659B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19DA26D51F91FB9600C659B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19DA26DE1F92043E00C659B4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		19DA26E11F9204C300C659B4 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		19DA27021F922F1000C659B4 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		19DA27161F92655E00C659B4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		19DA27181F92667B00C659B4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		19DA271B1F92683D00C659B4 /* Compose.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Compose.storyboard; sourceTree = "<group>"; };
+		19DA271D1F92690600C659B4 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		19DA271F1F92695900C659B4 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = "weibo/Classes/Discover(发现)/Message.storyboard"; sourceTree = SOURCE_ROOT; };
+		19DA27211F92698D00C659B4 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		19DA27231F92739F00C659B4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		19DA27261F93125500C659B4 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		19DA27291F931F9D00C659B4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		19DA272B1F9322D000C659B4 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		DC32604118224C892529D204 /* Pods_weibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF4CAB0B453413255F49181 /* Pods-weibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,10 +83,9 @@
 		19DA26C81F91FB9600C659B4 /* weibo */ = {
 			isa = PBXGroup;
 			children = (
-				19DA26E61F920BB900C659B4 /* Classes */,
+				19DA26E81F920E2600C659B4 /* Classes */,
 				19DA26C91F91FB9600C659B4 /* AppDelegate.swift */,
 				19DA26CB1F91FB9600C659B4 /* ViewController.swift */,
-				19DA26CD1F91FB9600C659B4 /* Main.storyboard */,
 				19DA26D01F91FB9600C659B4 /* Assets.xcassets */,
 				19DA26D21F91FB9600C659B4 /* LaunchScreen.storyboard */,
 				19DA26D51F91FB9600C659B4 /* Info.plist */,
@@ -76,69 +93,112 @@
 			path = weibo;
 			sourceTree = "<group>";
 		};
-		19DA26DC1F9203D000C659B4 /* Home(首页) */ = {
+		19DA26E81F920E2600C659B4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				19DA26E01F92048E00C659B4 /* Controller */,
-				19DA26DD1F92042C00C659B4 /* View */,
+				19DA271A1F92682900C659B4 /* Compose */,
+				19DA27131F92649300C659B4 /* Main(主要) */,
+				19DA26ED1F920F2000C659B4 /* Tools(工具) */,
+				19DA26EC1F920F0B00C659B4 /* Discover(发现) */,
+				19DA26EB1F920EA200C659B4 /* Me(我) */,
+				19DA26EA1F920E6800C659B4 /* Message(消息) */,
+				19DA26E91F920E6800C659B4 /* Home(首页) */,
 			);
-			name = "Home(首页)";
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		19DA26DD1F92042C00C659B4 /* View */ = {
+		19DA26E91F920E6800C659B4 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
-				19DA26DE1F92043E00C659B4 /* HomeTableViewCell.swift */,
+				19DA27281F931F7500C659B4 /* Model */,
+				19DA26FD1F922E8800C659B4 /* View */,
+				19DA26FC1F922E6F00C659B4 /* Controller */,
 			);
-			name = View;
+			path = "Home(首页)";
 			sourceTree = "<group>";
 		};
-		19DA26E01F92048E00C659B4 /* Controller */ = {
+		19DA26EA1F920E6800C659B4 /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
-				19DA26E11F9204C300C659B4 /* HomeTableViewController.swift */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		19DA26E31F920AB900C659B4 /* Message(消息) */ = {
-			isa = PBXGroup;
-			children = (
+				19DA271F1F92695900C659B4 /* Message.storyboard */,
 			);
 			name = "Message(消息)";
+			path = "Home(首页)/Message(消息)";
 			sourceTree = "<group>";
 		};
-		19DA26E41F920ACC00C659B4 /* Me(我) */ = {
+		19DA26EB1F920EA200C659B4 /* Me(我) */ = {
 			isa = PBXGroup;
 			children = (
+				19DA27211F92698D00C659B4 /* Me.storyboard */,
 			);
-			name = "Me(我)";
+			path = "Me(我)";
 			sourceTree = "<group>";
 		};
-		19DA26E51F920AE400C659B4 /* Discover(发现) */ = {
+		19DA26EC1F920F0B00C659B4 /* Discover(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				19DA271D1F92690600C659B4 /* Discover.storyboard */,
 			);
-			name = "Discover(发现)";
+			path = "Discover(发现)";
 			sourceTree = "<group>";
 		};
-		19DA26E61F920BB900C659B4 /* Classes */ = {
+		19DA26ED1F920F2000C659B4 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
-				19DA26E71F920C3B00C659B4 /* Tools(工具) */,
-				19DA26DC1F9203D000C659B4 /* Home(首页) */,
-				19DA26E31F920AB900C659B4 /* Message(消息) */,
-				19DA26E51F920AE400C659B4 /* Discover(发现) */,
-				19DA26E41F920ACC00C659B4 /* Me(我) */,
+				19DA27251F93124300C659B4 /* Extension */,
 			);
-			name = Classes;
+			path = "Tools(工具)";
 			sourceTree = "<group>";
 		};
-		19DA26E71F920C3B00C659B4 /* Tools(工具) */ = {
+		19DA26FC1F922E6F00C659B4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				19DA27021F922F1000C659B4 /* HomeTableViewController.swift */,
 			);
-			name = "Tools(工具)";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19DA26FD1F922E8800C659B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19DA27181F92667B00C659B4 /* Home.storyboard */,
+				19DA27231F92739F00C659B4 /* HomeTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19DA27131F92649300C659B4 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				19DA27161F92655E00C659B4 /* MainViewController.swift */,
+				19DA26CD1F91FB9600C659B4 /* Main.storyboard */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		19DA271A1F92682900C659B4 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				19DA271B1F92683D00C659B4 /* Compose.storyboard */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		19DA27251F93124300C659B4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19DA27261F93125500C659B4 /* UIButton+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		19DA27281F931F7500C659B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19DA27291F931F9D00C659B4 /* User.swift */,
+				19DA272B1F9322D000C659B4 /* Status.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		57771699603490A4BA9B384F /* Pods */ = {
@@ -223,7 +283,12 @@
 			files = (
 				19DA26D41F91FB9600C659B4 /* LaunchScreen.storyboard in Resources */,
 				19DA26D11F91FB9600C659B4 /* Assets.xcassets in Resources */,
+				19DA271C1F92683D00C659B4 /* Compose.storyboard in Resources */,
 				19DA26CF1F91FB9600C659B4 /* Main.storyboard in Resources */,
+				19DA27191F92667B00C659B4 /* Home.storyboard in Resources */,
+				19DA271E1F92690600C659B4 /* Discover.storyboard in Resources */,
+				19DA27221F92698D00C659B4 /* Me.storyboard in Resources */,
+				19DA27201F92695900C659B4 /* Message.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +338,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/CRRefresh/CRRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -284,6 +350,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -302,10 +369,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19DA26E21F9204C300C659B4 /* HomeTableViewController.swift in Sources */,
-				19DA26DF1F92043E00C659B4 /* HomeTableViewCell.swift in Sources */,
+				19DA27031F922F1000C659B4 /* HomeTableViewController.swift in Sources */,
+				19DA27241F92739F00C659B4 /* HomeTableViewCell.swift in Sources */,
 				19DA26CC1F91FB9600C659B4 /* ViewController.swift in Sources */,
+				19DA272C1F9322D000C659B4 /* Status.swift in Sources */,
 				19DA26CA1F91FB9600C659B4 /* AppDelegate.swift in Sources */,
+				19DA27171F92655E00C659B4 /* MainViewController.swift in Sources */,
+				19DA27271F93125500C659B4 /* UIButton+Extension.swift in Sources */,
+				19DA272A1F931F9D00C659B4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +389,7 @@
 				19DA26CE1F91FB9600C659B4 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		19DA26D21F91FB9600C659B4 /* LaunchScreen.storyboard */ = {
