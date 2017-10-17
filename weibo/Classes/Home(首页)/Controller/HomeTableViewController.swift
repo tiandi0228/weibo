@@ -21,6 +21,16 @@ class HomeTableViewController: UITableViewController {
         // 去掉分划线
         self.tableView.separatorStyle = .none
         
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        //注册cell
+        self.tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "HomeCell")
+        
+        // 设置 tabelView 行高,自动计算行高
+        tableView.rowHeight = UITableViewAutomaticDimension
+        // 设置预估行高 --> 先让 tableView 能滚动，在滚动的时候再去计算显示的 cell 的真正的行高，并且调整 tabelView 的滚动范围
+        tableView.estimatedRowHeight = 300
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,7 +54,7 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeTableViewCell
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.preferredMaxLayoutWidth = tableView.bounds.width
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
     }
     

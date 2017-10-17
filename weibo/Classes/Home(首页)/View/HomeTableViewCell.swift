@@ -15,14 +15,24 @@ class HomeTableViewCell: UITableViewCell {
     lazy var footBox = UIView()
     lazy var bodyBox = UIView()
     lazy var retweetBox = UIView()
+    lazy var picBox = UIView()
     lazy var splitLine = UIView()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        controls()
     }
     
-    func controls() {
+    //重写cell init方法
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.createUI()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func createUI() {
         
         // 屏幕宽度
         let width = UIScreen.main.bounds.size.width
@@ -115,15 +125,16 @@ class HomeTableViewCell: UITableViewCell {
         self.addSubview(bodyBox)
         bodyBox.snp.makeConstraints { (make) in
             make.width.equalTo(width)
-            make.height.equalTo(195)
             make.top.equalTo(headBox.snp.bottom).offset(10)
+            make.bottom.equalTo(-40)
         }
         
         // 评论内容
         let contentLabel = UILabel()
         bodyBox.addSubview(contentLabel)
-        contentLabel.text = "这是一条测试评论"
+        contentLabel.text = "这是一条测试评论这是一条测试评论这是一条测试评论这是一条测试评论这是一条测试评论这是一条测试评论"
         contentLabel.font = UIFont.systemFont(ofSize: 15.0)
+        contentLabel.numberOfLines = 0
         contentLabel.snp.makeConstraints { (make) in
             make.top.equalTo(0)
             make.left.equalTo(15)
@@ -135,28 +146,40 @@ class HomeTableViewCell: UITableViewCell {
         retweetBox.backgroundColor = UIColor.groupTableViewBackground
         retweetBox.snp.makeConstraints { (make) in
             make.width.equalTo(width)
-            make.height.equalTo(185)
             make.top.equalTo(contentLabel.snp.bottom).offset(10)
+            make.bottom.equalTo(0)
         }
         
         // 转发内容
         let retweetLabel = UILabel()
         retweetBox.addSubview(retweetLabel)
-        retweetLabel.text = "这是一条转发评论"
+        retweetLabel.text = "这是一条转发评论这是一条转发评论这是一条转发评论这是一条转发评论这是一条转发评论这是一条转发评论"
         retweetLabel.font = UIFont.systemFont(ofSize: 15.0)
+        retweetLabel.numberOfLines = 0
         retweetLabel.snp.makeConstraints { (make) in
             make.top.equalTo(10)
             make.left.equalTo(15)
             make.right.equalTo(-15)
         }
         
-        // 图片
-        let retweetImageView = UIImageView(image:UIImage(named:"ad_background"))
-        retweetBox.addSubview(retweetImageView)
-        retweetImageView.snp.makeConstraints { (make) in
-            make.width.height.equalTo((width-30) / 3)
+        // 图片主体
+        retweetBox.addSubview(picBox)
+        picBox.snp.makeConstraints { (make) in
+            make.width.equalTo(width-30)
+            make.height.equalTo((width-30) / 3)
             make.top.equalTo(retweetLabel.snp.bottom).offset(10)
             make.left.equalTo(15)
+            make.right.equalTo(-15)
+            make.bottom.equalTo(-10)
+        }
+        
+        // 图片
+        let retweetImageView = UIImageView(image:UIImage(named:"ad_background"))
+        picBox.addSubview(retweetImageView)
+        retweetImageView.snp.makeConstraints { (make) in
+            make.width.height.equalTo((width-30) / 3)
+            make.top.equalTo(0)
+            make.left.equalTo(0)
         }
         
         // 底部工具栏
