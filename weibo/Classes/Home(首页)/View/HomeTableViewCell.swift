@@ -11,12 +11,12 @@ import SnapKit
 
 class HomeTableViewCell: UITableViewCell {
     
-    lazy var headBox = UIView()
-    lazy var footBox = UIView()
-    lazy var bodyBox = UIView()
-    lazy var retweetBox = UIView()
-    lazy var picBox = UIView()
-    lazy var splitLine = UIView()
+    var headBox = UIView()
+    var footBox = UIView()
+    var bodyBox = UIView()
+    var retweetBox = UIView()
+    var picBox = UIView()
+    var splitLine = UIView()
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -10,8 +10,18 @@ import UIKit
 import SnapKit
 import Kingfisher
 
-class HomeTableViewController: UITableViewController {
-
+class HomeTableViewController: UITableViewController, UIPopoverPresentationControllerDelegate {
+    
+    var popView = UIView()
+    
+    var arrow = UIView()
+    
+    var scan = UIButton()
+    
+    var popLine = UIView()
+    
+    var show:Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +47,9 @@ class HomeTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -58,14 +70,23 @@ class HomeTableViewController: UITableViewController {
         return cell
     }
     
-    /*
+    
     // MARK: - Navigation
+
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? HomeMenuViewController {
+            vc.fromvc = self
+            vc.popoverPresentationController?.delegate = self
+            vc.preferredContentSize = CGSize(width: 120, height: 132)
+        }
     }
-    */
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
 
 }
