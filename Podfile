@@ -10,4 +10,5 @@ pod 'SwiftDate', '~> 4.3.0'
 pod 'SnapKit', '~> 3.0.2'
 pod 'Kingfisher', '~> 3.13.1'
 pod 'ESTabBarController-swift'
+pod 'SwiftPopMenu'
 end

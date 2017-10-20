@@ -9,18 +9,12 @@
 import UIKit
 import SnapKit
 import Kingfisher
+import SwiftPopMenu
 
 class HomeTableViewController: UITableViewController, UIPopoverPresentationControllerDelegate {
     
-    var popView = UIView()
-    
-    var arrow = UIView()
-    
-    var scan = UIButton()
-    
-    var popLine = UIView()
-    
-    var show:Bool = false
+    @IBOutlet weak var popButtonItem: UIBarButtonItem!
+    var popMenu:SwiftPopMenu!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +35,17 @@ class HomeTableViewController: UITableViewController, UIPopoverPresentationContr
         // 设置预估行高 --> 先让 tableView 能滚动，在滚动的时候再去计算显示的 cell 的真正的行高，并且调整 tabelView 的滚动范围
         tableView.estimatedRowHeight = 300
         
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "navigationbar_friendattention"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.actionClick))
+        
+        
+        
+    }
+    
+    func actionClick() {
+        
+        popMenu =  SwiftPopMenu(frame: CGRect(x: 230, y: 44, width: 120, height: 44))
+        popMenu.popData = [(icon:"scan",title:"扫一扫")]
+        popMenu.show()
     }
     
     override func didReceiveMemoryWarning() {
@@ -81,7 +86,8 @@ class HomeTableViewController: UITableViewController, UIPopoverPresentationContr
         if let vc = segue.destination as? HomeMenuViewController {
             vc.fromvc = self
             vc.popoverPresentationController?.delegate = self
-            vc.preferredContentSize = CGSize(width: 120, height: 132)
+            vc.preferredContentSize = CGSize(width: 120.0, height: 44.0)
+            vc.popoverPresentationController?.backgroundColor = UIColor.white
         }
     }
     

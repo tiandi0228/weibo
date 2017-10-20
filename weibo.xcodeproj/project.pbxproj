@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		196637391F98D0330031E386 /* HomeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196637381F98D0330031E386 /* HomeMenuViewController.swift */; };
-		1966373B1F98ED9E0031E386 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1966373A1F98ED9E0031E386 /* MenuCell.xib */; };
-		1966373D1F98EF7F0031E386 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966373C1F98EF7F0031E386 /* MenuTableViewCell.swift */; };
 		19DA26CA1F91FB9600C659B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA26C91F91FB9600C659B4 /* AppDelegate.swift */; };
 		19DA26CC1F91FB9600C659B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA26CB1F91FB9600C659B4 /* ViewController.swift */; };
 		19DA26CF1F91FB9600C659B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DA26CD1F91FB9600C659B4 /* Main.storyboard */; };
@@ -32,8 +30,6 @@
 /* Begin PBXFileReference section */
 		106EEB35FA120E3D5AD758EC /* Pods-weibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weibo/Pods-weibo.release.xcconfig"; sourceTree = "<group>"; };
 		196637381F98D0330031E386 /* HomeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeMenuViewController.swift; path = ../View/HomeMenuViewController.swift; sourceTree = "<group>"; };
-		1966373A1F98ED9E0031E386 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
-		1966373C1F98EF7F0031E386 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		19DA26C61F91FB9600C659B4 /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DA26C91F91FB9600C659B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19DA26CB1F91FB9600C659B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,8 +166,6 @@
 			children = (
 				19DA27181F92667B00C659B4 /* Home.storyboard */,
 				19DA27231F92739F00C659B4 /* HomeTableViewCell.swift */,
-				1966373A1F98ED9E0031E386 /* MenuCell.xib */,
-				1966373C1F98EF7F0031E386 /* MenuTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,7 +287,6 @@
 				19DA26D41F91FB9600C659B4 /* LaunchScreen.storyboard in Resources */,
 				19DA26D11F91FB9600C659B4 /* Assets.xcassets in Resources */,
 				19DA271C1F92683D00C659B4 /* Compose.storyboard in Resources */,
-				1966373B1F98ED9E0031E386 /* MenuCell.xib in Resources */,
 				19DA26CF1F91FB9600C659B4 /* Main.storyboard in Resources */,
 				19DA27191F92667B00C659B4 /* Home.storyboard in Resources */,
 				19DA271E1F92690600C659B4 /* Discover.storyboard in Resources */,
@@ -353,6 +346,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftPopMenu/SwiftPopMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -365,6 +359,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftPopMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +378,6 @@
 				19DA27241F92739F00C659B4 /* HomeTableViewCell.swift in Sources */,
 				19DA26CC1F91FB9600C659B4 /* ViewController.swift in Sources */,
 				19DA272C1F9322D000C659B4 /* Status.swift in Sources */,
-				1966373D1F98EF7F0031E386 /* MenuTableViewCell.swift in Sources */,
 				196637391F98D0330031E386 /* HomeMenuViewController.swift in Sources */,
 				19DA26CA1F91FB9600C659B4 /* AppDelegate.swift in Sources */,
 				19DA27171F92655E00C659B4 /* MainViewController.swift in Sources */,
